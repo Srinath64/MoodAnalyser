@@ -4,12 +4,12 @@ public class MoodAnalyser {
 
     String message;
 
-    public MoodAnalyser(String message) {    //constructor
+    public MoodAnalyser(String message) {
         super();
         this.message = message;
     }
 
-    public String analyseMood() {           //Method
+    public String analyseMood() {
         try {
             if(message.contains("Sad"))
                 return "Sad";
