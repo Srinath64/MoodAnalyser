@@ -15,6 +15,9 @@ public class MoodAnalyser {
             if (message == null) {
                 throw new MoodAnalyserException("Message Can't Be Null ", MoodAnalyserException.ExceptionType.NULL);
             }
+            else if(message.equals("")) {
+                throw new MoodAnalyserException("Message Can't Be Empty ", MoodAnalyserException.ExceptionType.EMPTYSTRING);
+            }
             else if (message.contains("Sad"))
                 return "Sad";
             else

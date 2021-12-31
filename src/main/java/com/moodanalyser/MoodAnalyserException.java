@@ -6,7 +6,7 @@ public class MoodAnalyserException extends Exception{
 
 
     public enum ExceptionType{
-        NULL
+        NULL,EMPTYSTRING
     }
     public MoodAnalyserException(String message,ExceptionType type) {
         super(message);
